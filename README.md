@@ -100,7 +100,7 @@ Please amend the code and submit your changes as a pull request.
 
 1. What are **the key things you need to test for** on the front-end of digital services?
 
-2. How do you ***how*** approach testing the front end of applications?
+2. How do you approach testing the front end of applications?
 
 ## Best practices
 
