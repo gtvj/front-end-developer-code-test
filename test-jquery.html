@@ -20,5 +20,11 @@
       <li><span class="highlight">React</span></li>
     </ul> 
   </div>
+    <script>
+$(document).on('click', 'li', function(){
+  console.log(this);
+    $(this).closest('li').remove();
+})
+</script>
 </body>
 </html>
