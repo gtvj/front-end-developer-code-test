@@ -1,24 +1,31 @@
 <!DOCTYPE html>
-<html>
-<head>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-<meta charset=utf-8 />
-<title>DOM manipulation exercise</title>
-</head>
-<body>
-  <h1>DOM manipulation using event delegation</h1>
-  <p>Using event delegation write the jQuery or JavaScript that will hide the &lt;li&gt; element that is clicked on. Any subsequent clicks should have no effect.</p>
-  <p>Please do not edit the HTML or CSS directly to achieve this.</p>
-  <div>
-    <h2>First set</h2>
-    <ul>
-      <li>HTML5</li>
-      <li>CSS</li>
-      <li><span class="highlight">JavaScript</span></li>
-      <li>Ruby</li>
-      <li>Django</li>
-      <li><span class="highlight">React</span></li>
-    </ul> 
-  </div>
-</body>
+<html lang="en">
+  <head>
+    <meta charset=utf-8 />
+    <title>DOM manipulation exercise</title>
+  </head>
+  <body>
+    <h1>DOM manipulation using event delegation</h1>
+    <p>Using event delegation write the jQuery or JavaScript that will hide the &lt;li&gt; element that is clicked on. Any subsequent clicks should have no effect.</p>
+    <p>Please do not edit the HTML or CSS directly to achieve this.</p>
+    <div>
+      <h2>First set</h2>
+      <ul>
+        <li>HTML5</li>
+        <li>CSS</li>
+        <li><span class="highlight">JavaScript</span></li>
+        <li>Ruby</li>
+        <li>Django</li>
+        <li><span class="highlight">React</span></li>
+      </ul>
+    </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script>
+      $(function(){
+        $('div ul').on('click', 'li', function(evt){
+          $(this).hide();
+        });
+      });
+    </script>
+  </body>
 </html>
